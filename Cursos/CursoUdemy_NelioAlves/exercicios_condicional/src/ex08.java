@@ -15,8 +15,6 @@
  * O valor deve ser impresso com duas casas decimais.
  */
 
-//		INCOMPLETO
-
 import java.util.Scanner;
 import java.util.Locale;
 public class ex08 {
@@ -45,12 +43,11 @@ public class ex08 {
 			double aplicar2 = (aplicar-1000)*0.18;
 			aplicar = 1000 * 0.08;
 			System.out.printf("Total a pagar: R$%.2f", aplicar+aplicar2);
-		} else if (aplicar>3000) {
+		} else if (aplicar>2500) {
 			double aplicar2 = 1500*0.18;
-			double aplicar3 = (aplicar-4500)*0.28;
+			double aplicar3 = (aplicar-2500)*0.28;
 			aplicar = 1000 * 0.08;
 			System.out.printf("Total a pagar: R$%.2f", aplicar+aplicar2+aplicar3);
 		}
 	}
-
 }
