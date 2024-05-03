@@ -13,6 +13,6 @@ public class ex01 {
 		} else {
 			System.out.println("Esse número é NEGATIVO");
 		}
+		ler.close();
 	}
-
 }

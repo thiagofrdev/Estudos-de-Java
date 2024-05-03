@@ -23,6 +23,7 @@ public class ex04 {
 		}
 
 		System.out.printf("O jogo durou %d hora(s)", total);
+		ler.close();
 	}
 
 }

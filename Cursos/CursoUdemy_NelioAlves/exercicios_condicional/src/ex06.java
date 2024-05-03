@@ -27,6 +27,7 @@ public class ex06 {
 		} else {
 			System.out.println("Fora dos intervalos");
 		}
+		
+		ler.close();
 	}
-
 }

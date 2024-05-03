@@ -17,7 +17,7 @@ public class ex03 {
 		} else {
 			System.out.println("NÃO são multiplos");
 		}
-		
+		ler.close();
 	}
 
 }

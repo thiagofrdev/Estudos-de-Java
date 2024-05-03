@@ -30,6 +30,7 @@ public class ex07 {
 		} else if (x>=0 && y<0 || x>0 && y<=0) {
 			System.out.println("Q4");
 		}
+		ler.close();
 	}
 
 }

@@ -49,5 +49,6 @@ public class ex08 {
 			aplicar = 1000 * 0.08;
 			System.out.printf("Total a pagar: R$%.2f", aplicar+aplicar2+aplicar3);
 		}
+		ler.close();
 	}
 }

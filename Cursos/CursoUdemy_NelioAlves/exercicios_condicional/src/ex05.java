@@ -28,6 +28,6 @@ public class ex05 {
 		}
 		
 		System.out.printf("Total: R$%.2f", total);
+		ler.close();
 	}
-	
 }

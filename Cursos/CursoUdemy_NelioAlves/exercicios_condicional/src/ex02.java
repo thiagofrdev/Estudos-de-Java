@@ -14,6 +14,6 @@ public class ex02 {
 		} else {
 			System.out.println("Esse número é IMPAR");
 		}
+		ler.close();
 	}
-
 }
