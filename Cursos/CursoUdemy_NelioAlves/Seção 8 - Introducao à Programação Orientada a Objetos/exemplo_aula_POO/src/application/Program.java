@@ -33,6 +33,8 @@ public class Program {
 		product.removeProducts(quantity);
 		
 		System.out.println(product);
+		
+		scan.close();
 	}
 
 }

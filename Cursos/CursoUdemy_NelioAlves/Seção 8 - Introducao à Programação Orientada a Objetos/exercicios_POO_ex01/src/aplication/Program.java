@@ -25,6 +25,8 @@ public class Program {
 		retangle.height = scan.nextDouble();
 		
 		System.out.println(retangle);
+		
+		scan.close();
 	}
 
 }

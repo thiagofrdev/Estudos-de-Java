@@ -28,6 +28,8 @@ public class Program {
 		employee.inceraseSalary(percentage);
 		
 		System.out.printf(employee.toString());
+		
+		scan.close();
 	}
 
 }
