@@ -35,16 +35,16 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
-		CreateAccount account = new CreateAccount();
+		CreateAccount account;
 		Deposit deposit = new Deposit();
 		
 		System.out.print("Enter account number: ");
 		int accountNumber = scan.nextInt();
-		account.setAccountNumber(accountNumber);
+		//account.setAccountNumber(accountNumber);
 		scan.nextLine();
 		System.out.print("Enter account holder: ");
 		String nameUser = scan.nextLine();
-		account.setNameUser(nameUser);
+		//account.setNameUser(nameUser);
 		
 		System.out.print("Is there na initial deposit (y/n)? ");
 		char answer = scan.next().charAt(0);
@@ -52,18 +52,20 @@ public class Program {
 		if (answer == 'y') {
 			System.out.print("Enter initial deposit value: $");
 			double initialDeposit = scan.nextDouble();
-			deposit.setDeposit(initialDeposit);
+			account = new CreateAccount(accountNumber, nameUser, initialDeposit);
+		} else {
+			account = new CreateAccount(accountNumber, nameUser);
 		}
 		
 		System.out.println(account);
 		
-		System.out.print("\nEnter a deposit value: ");
+		System.out.print("\nEnter a deposit value: $");
 		double newDeposit = scan.nextDouble();
 		deposit.addDeposit(newDeposit);
 		
 		System.out.println(account);
 		
-		System.out.print("\nEnter a withdraw value: ");
+		System.out.print("\nEnter a withdraw value: $");
 		double withdraw = scan.nextDouble();
 		deposit.withdrawDeposit(withdraw);
 		

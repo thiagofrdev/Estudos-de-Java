@@ -5,18 +5,23 @@ public class CreateAccount {
 	//ATTRIBUTES
 	private int accountNumber = 0;
 	private String nameUser;
+	Deposit deposit = new Deposit();
 	
 	//CONSTRUCTOR (!!Um construtor deve ter o exato mesmo nome da classe!!))
-	public CreateAccount() {
+	public CreateAccount(int accountNumber, String nameUser, double initialDeposit) {
+		this.accountNumber = accountNumber;
+		this.nameUser = nameUser;		
+		deposit.addDeposit(initialDeposit);
+	}
+	
+	public CreateAccount(int accountNumber, String nameUser) {
+		this.accountNumber = accountNumber;
+		this.nameUser = nameUser;
 	}
 
 	//GET AND SET METHODS
 	public int getAccountNumber() {
 		return accountNumber;
-	}
-
-	public void setAccountNumber(int accountNumber) {
-		this.accountNumber = accountNumber;
 	}
 
 	public String getNameUser() {

@@ -10,10 +10,6 @@ public class Deposit {
 	public static double getDeposit() {
 		return deposit;
 	}
-
-	public void setDeposit(double deposit) {
-		this.deposit = deposit;
-	}
 	
 	//FUNCTIONS
 	public void addDeposit(double newDeposit) {
