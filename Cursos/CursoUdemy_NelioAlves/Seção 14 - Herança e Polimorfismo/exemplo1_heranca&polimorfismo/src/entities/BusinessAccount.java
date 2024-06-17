@@ -25,4 +25,9 @@ public class BusinessAccount extends Account {
 			balance += amount - 10;
 		}
 	}
+	
+	public void withdraw(double amount) {
+		super.withdraw(amount);//Reaproveitanto a função da superclasse
+		balance -= 2.0;
+	}
 }
