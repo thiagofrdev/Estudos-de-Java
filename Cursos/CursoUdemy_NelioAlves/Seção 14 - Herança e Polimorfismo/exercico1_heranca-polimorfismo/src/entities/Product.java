@@ -1,6 +1,7 @@
 package entities;
 
-public class Product {
+//public abstract class Product --> Ela não pode ser INSTANCIADA, mas pode ser usada como classe geral (como TIPO) 
+public class  Product {
 	private String name;
 	private Double preco;
 	
