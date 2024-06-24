@@ -10,13 +10,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		String path = "..\\teste01.txt";
-		FileReader fr = null;
-		BufferedReader br = null;
 		
-		try {
-			fr = new FileReader(path);//Estabelecendo uma sequência de leitura apartir do caminho
-			br = new BufferedReader(fr);//Esquema para deixar a leitura mais rápida
-			
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
 			String line = br.readLine();
 			
 			while (line != null) {
@@ -26,19 +21,6 @@ public class Program {
 		}
 		catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
-		}
-		finally {
-			try {
-				if(br != null) {
-					br.close();
-				}
-				if (fr != null) {
-					fr.close();
-				}
-			}
-			catch (IOException e) {
-				e.printStackTrace();
-			}
 		}
 	}
 
